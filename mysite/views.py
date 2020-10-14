@@ -5,4 +5,4 @@ from django.shortcuts import render
 context = {'blogTitle':"Khmer Web", 'message':"Hello World!"}
 
 def index(request):
-  return render(request, './index.html', context)
+  return render(request, 'index.html', context)
