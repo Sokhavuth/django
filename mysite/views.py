@@ -1,5 +1,8 @@
 #mysite/views.py
 from django.http import HttpResponse
+from django.shortcuts import render
+
+context = {'blogTitle':"Khmer Web", 'message':"Hello World!"}
 
 def index(request):
-    return HttpResponse("Hello World!")
+  return render(request, './index.html', context)
