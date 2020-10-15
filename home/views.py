@@ -1,4 +1,4 @@
-#mysite/views.py
+#home/views.py
 from django.http import HttpResponse
 from django.shortcuts import render
 

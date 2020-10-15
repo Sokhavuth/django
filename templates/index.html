@@ -1,13 +1,16 @@
-<!--templates/index.html-->
+<!--home/templates/index.html-->
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>{{blogTitle}}</title>
-    
+    <link rel="icon" href="{% static 'images/site_logo.png' %}" >
+     
   </head>
   <body>
-    {{message}}
+    
+    <img src="{% static 'images/site_logo.png' %}" alt="My image">
   </body>
 </html>
